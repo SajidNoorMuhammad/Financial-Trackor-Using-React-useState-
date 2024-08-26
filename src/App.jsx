@@ -16,7 +16,6 @@ function App() {
   const totalIncome = transaction.reduce((acc, transaction) => transaction.type == "income" ? acc + Number(transaction.amount) : acc, 0)
   const totalExpense = transaction.reduce((acc, transaction) => transaction.type == "Expense" ? acc + Number(transaction.amount) : acc, 0)
   const balance = totalIncome - totalExpense;
-  console.log(totalIncome)
   return (
     <>
       <h1 className=' text-5xl mt-4 underline font-semibold text-blue-950 text-center mb-5'>Calculation Of Below Expense Trackor</h1>
